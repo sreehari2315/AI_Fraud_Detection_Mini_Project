@@ -132,7 +132,7 @@
   }
 
   .cyber-grid {
-    background-image: 
+    background-image:
       linear-gradient(hsl(180 100% 50% / 0.03) 1px, transparent 1px),
       linear-gradient(90deg, hsl(180 100% 50% / 0.03) 1px, transparent 1px);
     background-size: 50px 50px;

@@ -21,14 +21,14 @@ interface DashboardProps {
   analyzedCount: number;
 }
 
-const Dashboard = ({ 
-  riskScore, 
-  prediction, 
+const Dashboard = ({
+  riskScore,
+  prediction,
   riskReason,
-  isLoading, 
+  isLoading,
   isScanning,
   recentTransactions,
-  analyzedCount 
+  analyzedCount
 }: DashboardProps) => {
   const isFraud = prediction === "Fraud";
   const isSafe = prediction === "Safe";
@@ -117,7 +117,7 @@ const Dashboard = ({
                 }}
               />
             </div>
-            
+
             <div className="relative z-10 flex flex-col items-center justify-center py-8">
               <motion.div
                 animate={{ rotate: 360 }}
@@ -219,7 +219,7 @@ const Dashboard = ({
             <TrendingUp className="w-5 h-5 text-primary" />
           </div>
           <div className="flex items-end gap-2">
-            <motion.span 
+            <motion.span
               key={analyzedCount}
               initial={{ scale: 1.2 }}
               animate={{ scale: 1 }}
@@ -323,7 +323,7 @@ const Dashboard = ({
                   </motion.tr>
                 ))}
               </AnimatePresence>
-              
+
               {recentTransactions.length === 0 && (
                 <tr>
                   <td colSpan={5} className="py-8 text-center text-muted-foreground">

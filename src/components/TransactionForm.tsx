@@ -31,7 +31,7 @@ const TransactionForm = ({ onSubmit, isLoading }: TransactionFormProps) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!amount || !time || !location || !type) return;
 
     await onSubmit({
